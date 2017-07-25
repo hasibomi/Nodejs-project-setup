@@ -1,0 +1,44 @@
+{
+  "name": "nodejs-project-setup",
+  "version": "1.0.0",
+  "description": "Basic setup of a Nodejs application",
+  "main": "dist/bin/www",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development nodemon -w src --exec \"babel-node src/bin/www --presets es2015,stage-0\"",
+    "build": "babel src -s -D -d dist",
+    "start": "NODE_ENV=production pm2 start dist/bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasibomi/Nodejs-project-setup.git"
+  },
+  "keywords": [
+    "nodejs",
+    "boilerplate",
+    "basic",
+    "project",
+    "setup",
+    "nodejs",
+    "basic",
+    "project",
+    "setup"
+  ],
+  "author": "Hasibur Rahman Omi <me@hasibomi.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hasibomi/Nodejs-project-setup/issues"
+  },
+  "homepage": "https://github.com/hasibomi/Nodejs-project-setup#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
